@@ -20,7 +20,7 @@
     "eslint-plugin-react": "^6.10.0",
     "neutrino-preset-web": "^4.2.0",
     "react-hot-loader": "^3.0.0-beta.6",
-    "webpack": "^2.2.1"
+    "webpack": "^5.0.0"
   },
   "peerDependencies": {
     "neutrino": "^4.0.0"
