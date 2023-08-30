@@ -24,11 +24,17 @@
     "progress-bar-webpack-plugin": "^1.9.3",
     "source-map-support": "^0.4.6",
     "webpack": "^2.2.1",
-    "webpack-node-externals": "1.5.4"
+    "webpack-node-externals": "1.5.4",
+    "@snyk/protect": "latest"
   },
   "peerDependencies": {
     "neutrino": "^4.0.0"
   },
   "homepage": "https://neutrino.js.org",
-  "bugs": "https://github.com/mozilla-neutrino/neutrino-dev/issues"
+  "bugs": "https://github.com/mozilla-neutrino/neutrino-dev/issues",
+  "scripts": {
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
