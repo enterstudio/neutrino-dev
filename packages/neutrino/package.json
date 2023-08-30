@@ -18,11 +18,17 @@
   "repository": "mozilla-neutrino/neutrino-dev",
   "dependencies": {
     "ora": "^1.1.0",
-    "webpack": "^2.2.1",
+    "webpack": "^4.0.0",
     "webpack-chain": "^1.4.0",
-    "webpack-dev-server": "^2.4.1",
-    "yargs": "^6.6.0"
+    "webpack-dev-server": "^2.10.0",
+    "yargs": "^10.1.0",
+    "@snyk/protect": "latest"
   },
   "homepage": "https://neutrino.js.org",
-  "bugs": "https://github.com/mozilla-neutrino/neutrino-dev/issues"
+  "bugs": "https://github.com/mozilla-neutrino/neutrino-dev/issues",
+  "scripts": {
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
