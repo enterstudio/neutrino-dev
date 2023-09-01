@@ -31,11 +31,17 @@
     "url-loader": "^0.5.8",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1",
-    "worker-loader": "0.7.1"
+    "worker-loader": "0.7.1",
+    "@snyk/protect": "latest"
   },
   "peerDependencies": {
     "neutrino": "^4.0.0"
   },
   "homepage": "https://neutrino.js.org",
-  "bugs": "https://github.com/mozilla-neutrino/neutrino-dev/issues"
+  "bugs": "https://github.com/mozilla-neutrino/neutrino-dev/issues",
+  "scripts": {
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
