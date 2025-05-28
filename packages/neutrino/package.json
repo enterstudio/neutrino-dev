@@ -21,7 +21,7 @@
     "webpack": "^2.2.1",
     "webpack-chain": "^1.4.0",
     "webpack-dev-server": "^2.4.1",
-    "yargs": "^6.6.0"
+    "yargs": "^18.0.0"
   },
   "homepage": "https://neutrino.js.org",
   "bugs": "https://github.com/mozilla-neutrino/neutrino-dev/issues"
